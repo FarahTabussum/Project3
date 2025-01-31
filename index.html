@@ -68,7 +68,7 @@
                       <span class="far fa-bell fa-2x"></span>
                       <span class="fas fa-search fa-2x "></span>
                     
-                      <a class="btn text-xl font font-medium">Login</a>
+                      <a class="btn text-xl font font-medium bg-transparent border-amber-500">Login</a>
                       <a class="btn btn-error bg-btn_primary text-xl font-medium border-none">Register</a>
                     </div>
                 </div>
@@ -101,30 +101,108 @@
         </nav>
 
     </header>
-    <main class="bg-lime-300 sm:container w-full md:container mx-auto px-0 overflow-hidden lg:px-20">
-      <div class="hero min-h-screen flex">
-        <div class="hero-content flex-col">
-          <div>
-            <h1>Pamper Your Pet,<br> Because They Deserve<br>the Best</h1><br>
-            <p class="py-6 w-2/4">
-              Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!
-            </p>
-            <button class="btn bg-btn_primary">Find a Pet</button>
-          </div>
-          <img
-          src="c1-assets/cat-big.png"
-          class="lg: pd" />
+    <main class="sm:container w-full md:container mx-auto px-0 overflow-hidden lg:px-20">
+      <div class="hero min-h-screen flex relative">
+        <div class="absolute top-0 left-0 p-6 text-white z-10 mt-0 lg:my-20 ">
+          <h1 class="font-adlam text-black text-3xl lg:text-6xl">Pamper Your Pet,<br> Because They Deserve<br>the Best</h1>
+          <p class="py-6 w-3/4 text-gray-500 text-base mt-1 lg:text-xl mt-1">
+            Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!
+          </p>
+          <button class="font-sora btn bg-btn_primary px-5 text-base lg:px-10 lg:text-xl">Find a Pet</button>
         </div>
+        <img src="c1-assets/cat-big.png" class="w-full h-auto object-cover mt-0 lg:my-20"/>
       </div>
-      <!-- <div>
-        <div>
-          <h1>Pamper Your Pet,<br> Because They Deserve<br>the Best</h1><br>
-          <p class="w-2/4">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+      <!-- card section -->
+       <h3 class="font-adlam text-black text-2xl -mt-40 px-2 md:-mt-20 lg:text-3xl lg:mt-40 lg:mb-10 ">Browse By Categories</h3>
+       
+       <div class="grid grid-cols-2 gap-x-2 gap-y-2 mt-10 px-2 lg:grid-cols-6 gap-4 mb-10">
+        <div class="card bg-amber-200 w-25 h-50">
+          <figure class="px-10 pt-10">
+            <div class="avatar">
+              <div class="w-24 rounded-full bg-white">
+                <img class="p-6" src="c1-assets/dog-cartoon.png"/>
+              </div>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title font-adlam text-xl">Dog</h2>
+            <p class="text-base font-sora">3 Items</p>
+          </div>
         </div>
-        <img src="c1-assets/cat-big.png">
-        <a class="btn bg-btn_primary text-xl font-medium border-none">Find a pet</a>
+        <!-- card-2 -->
+        <div class="card bg-amber-200 w-25 h-50">
+          <figure class="px-10 pt-10">
+            <div class="avatar">
+              <div class="w-24 rounded-full bg-white">
+                <img class="p-6" src="c1-assets/fish-cartoon.png" />
+              </div>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title font-adlam text-xl">Fish</h2>
+            <p class="font-sora text-base">3 Items</p>
+          </div>
+        </div> 
+        <!-- card-3 -->
+        <div class="card bg-amber-200 w-25 h-50">
+          <figure class="px-10 pt-10">
+            <div class="avatar">
+              <div class="w-24 rounded-full bg-white">
+                <img class="p-6" src="c1-assets/cat-cartoon.png" />
+              </div>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-xl font-adlam">Cat</h2>
+            <p class="font-sora text-base">3 Items</p>
+          </div>
+        </div>
+        <!-- card-4 -->
+        <div class="card bg-amber-200 w-25 h-50">
+          <figure class="px-10 pt-10">
+            <div class="avatar">
+              <div class="w-24 rounded-full bg-white">
+                <img class="p-6" src="c1-assets/bird-cartoon.png" />
+              </div>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title font-adlam text-xl">Birds</h2>
+            <p class="font-sora text-base">3 Items</p>
+          </div>
+        </div>
+        <!-- card-5 -->
+        <div class="card bg-amber-200 w-25 h-50">
+          <figure class="px-10 pt-10">
+            <div class="avatar">
+              <div class="w-24 rounded-full bg-white">
+                <img class="p-6" src="c1-assets/cute-pet-small.png" />
+              </div>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-xl font-adlam">Small pet</h2>
+            <p class="text-base font-sora">3 Items</p>
+          </div>
+        </div>
+        <!-- card-6 -->
+        <div class="card bg-amber-200 w-25 h-50">
+          <figure class="px-10 pt-10">
+            <div class="avatar">
+              <div class="w-24 rounded-full bg-white">
+                <img class="p-6" src="c1-assets/rabbit-cartoon.png" />
+              </div>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title font-adlam text-xl">Rabbit</h2>
+            <p class="text-base font-sora">3 Items</p>
+          </div>
+        
+        </div>
+       </div>
 
-      </div> -->
+     
 
     </main>
     <footer>
