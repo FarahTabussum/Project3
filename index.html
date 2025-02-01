@@ -18,16 +18,6 @@
     <!-- daisyui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .font-adlam{
-            font-family: "ADLaM Display", serif;
-
-        }
-        .font-sora{
-            font-family: "Sora", serif;
-        }
-
-    </style>
     <script>
         tailwind.config = {
           theme: {
@@ -429,13 +419,62 @@
         </div>
        </section>
 
+       
+
 
      
 
     </main>
-    <footer>
+    <footer class="foot flex flex-col w-full">
+      <div class="foot_card bg-lime-200 w-11/12 mb-1 lg:w-10/12 h-3/5 mx-auto">
+        <div class="hee hero-content flex-col lg:flex-row justify-around">
+          <img
+            src="c1-assets/cute-pet-mid.png"
+            class="max-w-sm rounded-lg" />
+          <div class="card_text">
+            <h1 class="text-xl font-adlam lg:text-5xl">Get Pawsome News!</h1><br>
+            <p class="para font-sora text-base lg:text-xl">
+              Exclusive training tips, ticks, product deals and more.
+            </p><br>
+            <form action="submit_email.php" method="POST">
+              <input class="p-4" type="email" placeholder="Enter email..." required>
+        
+            </form><br>
+          
+            <button class="btnn btn bg-btn_primary font-adlam text-base">Subscribe</button>
+          </div>
+        </div>
+      </div>
+     
+    <div class="footer bg-amber-300 text-base-content h-auto px-10 pt-20 w-full">
+      
+      <nav class="mt-0 lg:mt-40">
+        <div class="flex flex-row items-center gap-2">
+          <img src="c1-assets/logo-footer.png"/>
+          <h1 class="text-2xl font-adlam">Browse Pets</h1>
+        </div>
+        <a class="link link-hover w-3/5">Discover a world of treats, toys, and essentials handpicked for your furry friends</a>
+      </nav>
+      <nav class="lg:mt-40">
+        <a class="link link-hover text-xl font-sora">Find a Pet</a>
+        <a class="link link-hover text-xl font-sora">Breeds</a>
+        <a class="link link-hover text-xl font-sora">Contact Us</a>
+      </nav>
+      <nav class="lg:mt-40">
+        <h6 class="text-black font-sora text-base">Follow Us</h6>
+        <div class="grid grid-flow-col gap-4">
+          <span class="fa-brands fa-facebook fa-2x"></span>
+          <span class="fa-brands fa-instagram fa-2x "></span>
+          <i class="fa-brands fa-linkedin fa-2x"></i>
+          <i class="fa-brands fa-youtube fa-2x"></i>
+        
+        </div>
+      </nav>
+    </div>
+  </footer>
+      
 
-    </footer>
+    
     
 </body>
 </html

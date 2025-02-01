@@ -1,3 +1,11 @@
+.font-adlam{
+    font-family: "ADLaM Display", serif;
+
+}
+.font-sora{
+    font-family: "Sora", serif;
+}
+
 
 .icon{
     display: flex;
@@ -11,6 +19,13 @@
 .lol{
     display: block;
 }
+.foot{
+    position: absolute;
+}
+.foot_card{
+    position: relative;
+    margin-bottom: -180px;
+}
 
 
 @media screen and (max-width: 700px) {
@@ -23,6 +38,19 @@
     .lol{
         display: none;
     }
+    .foot_card{
+        margin-bottom: 8px;
+        width: auto;
+        margin: 7px;
+    }
+    .hee{
+        align-items: center;
+    }
+    
+    .card_text{
+        text-align: center;
+    }
+    
     
    
 }
