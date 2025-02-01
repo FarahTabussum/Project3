@@ -5,7 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project3</title>
     <!-- css -->
-     <link rel="stylesheet" href="style/style.css">
+     <style>
+    @keyframes fly {
+      0% {
+        transform: translateX(0) translateY(0);
+      }
+      50% {
+        transform: translateX(50px) translateY(-50px);
+      }
+      100% {
+        transform: translateX(0) translateY(0);
+      }
+    }
+    
+    .animate-fly {
+      animation: fly 3s ease-in-out infinite;
+    }
+    </style>
+     
     <!-- google font sora -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +31,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="style/style.css">
     
     <!-- daisyui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -32,6 +51,8 @@
       </script>
       <!-- icon -->
       <script src="https://kit.fontawesome.com/9b03a7488d.js" crossorigin="anonymous"></script>
+      
+      
 
 </head>
 <body>
@@ -93,13 +114,16 @@
     </header>
     <main class="sm:container w-full md:container mx-auto px-0 overflow-hidden lg:px-20">
       <div class="hero min-h-screen flex relative">
-        <div class="absolute top-0 left-0 p-6 text-white z-10 mt-0 lg:my-20 ">
+        <img src="c1-assets/fish-cartoon.png" alt="Flying Butterfly" class="absolute animate-fly w-12 h-12 z-20 right-60"/>
+        
+        <div class="absolute top-0 left-0 p-6 text-white z-10 mt-0 lg:my-20">
           <h1 class="font-adlam text-black text-3xl lg:text-6xl">Pamper Your Pet,<br> Because They Deserve<br>the Best</h1>
           <p class="py-6 w-3/4 text-gray-500 text-base mt-1 lg:text-xl mt-1">
             Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!
           </p>
           <button class="font-sora btn bg-btn_primary px-5 text-base lg:px-10 lg:text-xl">Find a Pet</button>
         </div>
+        
         <img src="c1-assets/cat-big.png" class="w-full h-auto object-cover mt-0 lg:my-20"/>
       </div>
       <!-- card section -->
@@ -192,11 +216,6 @@
         </div>
        </div>
        <!-- grid layout -->
-
-
-
-
-
        <section class="bg-amber-50 min-h-screen my-10 lg:my10">
         <h1 class="text-3xl font-adlam px-20">Trending Pet Products</h1>
         <div class="grid grid-cols-4 grid-rows-3 gap-4 p-0 lg:p-20 ">
@@ -219,7 +238,7 @@
                 <img src="c1-assets/dog-cartoon.png" />
               </div>
             </div>
-            <div class="card-body flex flex-1">
+            <div class="card-body flex justify-between">
               <div class="flex items-center">
                 <img class="w-4 h-4" src="c1-assets/staricon.png"/>
                 <p class="text-base">4.5</p>
@@ -421,7 +440,7 @@
        
        <!-- carosal -->
         <h1 class="font-adlam text-3xl mt-20 mx-2 lg:mx-0">Different Types Of Pet</h1>
-       <div class="carousel carousel-end rounded-box pt-10 mx-2 lg:mx-0">
+       <div class="carousel carousel-end rounded-box pt-10 pb-10 mx-2 lg:mx-0">
         <div class="carousel-item">
           <img src="c1-assets/car2.jpg" alt="Drink" />
         </div>
@@ -460,6 +479,7 @@
 
     </main>
 
+    <!-- class="foot flex flex-col w-full"> -->
     <footer class="foot flex flex-col w-full">
       <div class="foot_card bg-orange-50 w-11/12 mb-1 lg:w-10/12 h-3/5 mx-auto">
         <div class="hee hero-content flex-col lg:flex-row justify-around">
@@ -507,6 +527,7 @@
       </nav>
     </div>
   </footer>
+  
       
 
     

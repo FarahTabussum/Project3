@@ -1,54 +1,54 @@
 .font-adlam{
-    font-family: "ADLaM Display", serif;
+    font-family: "ADLaM Display", serif !important;
 
 }
 .font-sora{
-    font-family: "Sora", serif;
+    font-family: "Sora", serif !important ;
 }
 
 
 .icon{
-    display: flex;
-    flex-direction: row;
-    gap: 13px;
-    align-items: center;
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 13px !important;
+    align-items: center !important;
 }
 .dropdown{
-    display: none;
+    display: none !important;
 }
 .lol{
-    display: block;
+    display: block !important;
 }
 .foot{
-    position: absolute;
+    position: absolute !important;
 }
 .foot_card{
-    position: relative;
-    margin-bottom: -180px;
+    position: relative !important; 
+    margin-bottom: -180px !important; 
 }
 
 
 @media screen and (max-width: 700px) {
     .icon{
-        display: none;
+        display: none !important;
     }
     .dropdown{
-        display: block;
+        display: block !important;
     }
     .lol{
-        display: none;
+        display: none !important;
     }
     .foot_card{
-        margin-bottom: 8px;
-        width: auto;
-        margin: 7px;
+        margin-bottom: 8px !important;
+        width: auto !important;
+        margin: 7px !important;
     }
     .hee{
-        align-items: center;
+        align-items: center !important;
     }
     
     .card_text{
-        text-align: center;
+        text-align: center !important;
     }
     
     
