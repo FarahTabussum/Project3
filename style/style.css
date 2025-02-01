@@ -39,16 +39,25 @@
         display: none !important;
     }
     .foot_card{
-        margin-bottom: 8px !important;
+        /* margin-bottom: 8px !important;  */
+        height: 50%;
         width: auto !important;
-        margin: 7px !important;
-    }
+        margin: 10 0 !important;
+    } 
     .hee{
         align-items: center !important;
     }
     
     .card_text{
         text-align: center !important;
+        margin-top: 10px !important;
+    }
+    .dog_img{
+        width:30% !important;
+        
+    }
+    .browse{
+        margin-top: 30% !important;
     }
     
     
